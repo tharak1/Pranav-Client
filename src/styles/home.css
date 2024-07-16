@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.active{
+    color: aqua;
+}
+.hero{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.hero::before{
+    content: "";
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    background: url(../assets/flat-lay-fresh-berries-fruits-with-copy-space.jpg) no-repeat center/cover;
+}
+.left-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 69vw;
+    padding: 123px;
+}
+
+.why-pranav{
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    height: auto;
+    background: #FFD9C8;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px 0px 20px;
+}
+.heading h1{
+    margin: 0px 0px 30px 0px;
+}
+.holder{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 250px;
+    background-color: beige;
+    border-radius: 50px;
+    margin:10px  20px;
+}
+.button-holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    
+}
+.svg{
+    margin-bottom: -2px;
+}
+.button-holder button{
+    border: none;
+    height: 50px;
+    width: 250px;
+    border-radius: 50px;
+    background-color: #A8E93B;
+    padding: 10px;
+    margin: 35px 0px 0px 0px;
+    font-size: 25px;
+}
+.card-1{
+    background: linear-gradient(#FE3CB0, #ffffff);
+}
+.card-2{
+    background: linear-gradient(#0094FF, #ffffff);
+}
+
+.card-3{
+    background: linear-gradient(#DBFF00, #ffffff);
+}
+
+.card-4{
+    background: linear-gradient(#00FFC2, #ffffff);
+}
+
+
+.card-top{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-top img{
+    height: 120px;
+    width: 120px;
+}
+.card-title-h2{
+    text-align: center;
+
+}
+.content p{
+    text-align: center;
+}
+.info-section{
+    display: flex;
+    max-width: 100vw;
+    height: auto;
+    justify-content: space-around;
+
+}
+.info-img{
+    width: 575px;
+    height: 408px;
+}
+.info-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.info-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.list p{
+    margin: 5px;
+    font-size: larger;
+}
+
+.recipies-display-container{
+    max-width: 100vw;
+    height: 600px;
+    background-color: #F9BCBC;
+    overflow-x: hidden;
+}
+svg{
+    margin-bottom: -4px;
+}
+.recipie-holder{
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    height: 600px;
+    
+}
+.recipie-heading h1{
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+}
+.farming-info{
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    min-height: 100vh   ;
+    justify-content: center;align-items: center;
+}
+.image{
+    margin-top: 80px;
+}
+.image img{
+    width: 600px;
+    height: 390px;
+    border-radius: 60px;
+}
+.display-info{
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    padding:50px 200px;
+}
+.display-info p{
+    padding-bottom: 20px;
+}
+
+
