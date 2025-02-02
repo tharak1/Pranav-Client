@@ -1,0 +1,28 @@
+.user-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.validated-user-name h2{
+    margin-left: 20px;
+}
+.navbar-after-login{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(114, 114, 114, 0.3) 0px 30px 60px -30px;
+    
+}
+.validated-user-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.validated-user-image img{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+}

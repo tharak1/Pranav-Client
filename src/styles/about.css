@@ -1,0 +1,30 @@
+.container-holder{
+    margin-top: 70px;
+}
+.card1-back{
+    background-color: antiquewhite;
+}
+.c-card-1{
+    display: flex;
+    padding: 30px;
+    border-bottom-left-radius: 50px;
+    background-color: white;
+
+}
+.c-card-1-image,.c-card-2-image{
+    margin: 20px;
+}
+.c-card-1-image img{
+    width: 400px;
+    height: 240px;
+}
+.c-card-2{
+    display: flex;
+    padding: 30px;
+    border-bottom-right-radius: 50px;
+    background-color: antiquewhite;
+}
+.c-card-2-image img{
+    width: 400px;
+    height: 240px;
+}

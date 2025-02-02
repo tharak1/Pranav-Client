@@ -1,0 +1,69 @@
+.info-holder{
+    display: flex;
+    padding: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+.info-grid-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.info-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    max-width: 350px;
+    height: 225px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    opacity: 1;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.5) 0px 3px 7px -3px;
+    padding: 20px;
+}
+
+.info-card-image img{
+    height: 40px;
+    width: 40px;
+}
+.title{
+    display: flex;
+    width: 100%;
+}
+.server-responce{
+    display: flex;
+    flex-direction: column;
+}
+.title-name{
+    margin-left: 20px;
+}
+.test-anlysis{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.delivery-res{
+    display: flex;
+}
+.d-status-image img{
+    height: 50px;
+    width: 50px;
+}
+.progressbar{
+    display: flex;
+    align-items: center;
+}
+.back{
+    width: 175px;
+    height: 20px;
+    background-color: rgba(198, 180, 180, 0.333);
+}
+.progress{
+    height: inherit;
+    background-color: aqua;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
