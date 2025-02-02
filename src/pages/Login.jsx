@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom';
 import { useGetUserID } from "../hooks/useGetUserID";
 
 import '../styles/Login.css';
+import url from "../url";
 
 export const Login =  ()=>{
 
@@ -24,7 +25,7 @@ export const Login =  ()=>{
     const auth = async(event)=>{
         event.preventDefault();
         try{
-            const token = await axios.post("http://localhost:5000/api/user/login",{
+            const token = await axios.post(`${url}/api/user/login`,{
                 email,
                 password
             });
@@ -33,7 +34,7 @@ export const Login =  ()=>{
             window.localStorage.setItem("userID", token.data.token);
 
             if(token.status === 200){
-                const result1 = await axios.get("http://localhost:5000/api/userdata/",        
+                const result1 = await axios.get(`${url}/api/userdata/`,        
                 {headers: {
                     'Authorization': 'Bearer ' + token.data.token
                 }}

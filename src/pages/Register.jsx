@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 import "../styles/Login.css"
 import {Link} from "react-router-dom"
+import url from "../url";
 export const Register = ()=>{
 
     
@@ -15,25 +16,25 @@ export const Register = ()=>{
     const auth = async (event)=>{
         event.preventDefault();
 
-        const result = await axios.post("http://localhost:5000/api/user/register",{
+        const result = await axios.post(`${url}/api/user/register`,{
             username,
             email,
             password,
         });
         console.log(result);
         
-            const token = await axios.post("http://localhost:5000/api/user/login",{
+            const token = await axios.post(`${url}/api/user/login`,{
                 email,
                 password
             });
             console.log(token.data.token);
-            fetch("http://localhost:5000/api/userdata/",{
+            fetch(`${url}/api/userdata/`,{
                     method: 'PUT',
                     headers: {
                         'Authorization':  'Bearer ' + token.data.token
                     },
                 }).then(res => console.log(res));
-            fetch("http://localhost:5000/api/userinfo/",{
+            fetch(`${url}/api/userinfo/`,{
                 method: 'POST',
                 headers: {
                     'Authorization':  'Bearer ' + token.data.token

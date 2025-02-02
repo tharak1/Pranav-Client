@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import '../styles/Info.css'
 import { useGetUserID } from '../hooks/useGetUserID';
 import axios from 'axios';
+import url from '../url';
 
 function Info() {
 
@@ -16,7 +17,7 @@ function Info() {
   useEffect(()=>{
     const fetchUserinfo = async()=>{
       try{
-        const dataresponse = await axios.get("http://localhost:5000/api/userinfo/",config);
+        const dataresponse = await axios.get(`${url}/api/userinfo/`,config);
         setInfo(dataresponse.data[0])
         console.log(dataresponse.data[0]);
       }

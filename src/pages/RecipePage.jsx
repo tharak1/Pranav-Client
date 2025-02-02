@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import {useParams} from 'react-router-dom';
+import url from '../url';
 function RecipePage() {
 
     let { id } = useParams();
@@ -8,7 +9,7 @@ function RecipePage() {
     useEffect(()=>{
         const fetchRecipe = async()=>{
             try{
-                const response = await axios.get(`http://localhost:5000/api/recipe/${id}`);
+                const response = await axios.get(`${url}/api/recipe/${id}`);
                 setRecipe(response.data.rec);
             }
             catch(err){

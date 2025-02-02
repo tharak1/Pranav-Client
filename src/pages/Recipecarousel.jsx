@@ -3,6 +3,7 @@ import '../styles/carousel.css'
 import axios from 'axios';
 
 import React, { useEffect, useState } from 'react'
+import url from '../url';
 
 function Recipecarousel() {
     
@@ -29,8 +30,9 @@ function Recipecarousel() {
      useEffect(()=>{
         const fetchRecipe = async()=>{
             try{
-                const response = await axios.get("http://localhost:5000/api/recipe");
+                const response = await axios.get(`${url}/api/recipe`);
                 setRecipe(response.data.rec);     
+                console.log(response.data.rec)
             }
             catch(err){
                 console.log(err);

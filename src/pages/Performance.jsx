@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import '../styles/Performance.css'
 import { useGetUserID } from '../hooks/useGetUserID';
 import axios from 'axios';
+import url from '../url';
 
 
 
@@ -18,7 +19,7 @@ function Performance() {
   useEffect(()=>{
     const fetchUserdata = async()=>{
       try{
-        const dataresponse = await axios.get("http://localhost:5000/api/userdata/",config);
+        const dataresponse = await axios.get(`${url}/api/userdata/`,config);
         setData(dataresponse.data[0])
         console.log(dataresponse.data[0]);
       }
